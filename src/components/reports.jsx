@@ -16,10 +16,10 @@ componentWillMount(){
 			<div className="container mt-5">
 				<br /><br />
 				<h3 className="text-center text-primary">All Reports</h3>
-				<div className="col">
-					<table className="table table-hover">
+				<div className="col-12">
+					<table className="table table-hover table-responsive">
 						<thead className="thead-dark">
-							<tr>
+						    <tr>
 								<th className="text-center text-white">S/N</th>
 								<th className="text-center text-white">FullName</th>
 								<th className="text-center text-white">Mail Address</th>
@@ -27,20 +27,18 @@ componentWillMount(){
 								<th className="text-center text-white">Resident Address</th>
 							</tr>
 						</thead>
-						<div className="table-responsive">
 							<tbody>
-								{this.state.reports.map(report =>(
-									<tr key={report.id}>
-										<td className="text-center text-primary">{report}</td>
-										<td className="text-center text-primary">{report.name}</td>
-										<td className="text-center text-primary">{report.mail}</td>
-										<td className="text-center text-primary">{report.sickType}</td>
-										<td className="text-center text-primary">{report.address}</td>
+								{this.state.reports.map( (report, index) =>(
+									<tr key={index+1}>
+										<td className="text-center text-primary">{index+1}</td> 
+										<td className="text-center text-primary">{report.name}</td> 
+										<td className="text-center text-primary">{report.mail}</td> 
+										<td className="text-center text-primary">{report.sickType}</td> 
+										<td className="text-center text-primary">{report.address}</td> 
 									</tr>
 									))}
 							</tbody>
-						</div>
-						<center><Link className="btn btn-success">Back to Home</Link></center>
+							<Link className="btn btn-success mx-auto d-block" to="/">Back to Home</Link>
 					</table>
 				</div>
 			</div>

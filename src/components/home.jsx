@@ -49,7 +49,7 @@ class Home extends React.Component{
 					</div>
 				</div>
 				<div className="col sub mt-3">
-					<h3 className="text-center text-white">Keep Connected..</h3>
+					<h3 className="text-center text-white"><i className="fa fa-envelope"></i> Subscribe to our News Letters.</h3>
 					<div className="form-group">
 						<input type="text" className="form-control" onChange={this.handleChange} name="subContent" placeholder="Subscribe.." />
 						<button className="btn btn-warning rounded btn-block" onClick={this.handleSub}>Subscribe.</button>

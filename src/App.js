@@ -50,28 +50,29 @@ class App extends React.Component {
 			</div>
 			<footer className="p-5">
 				<h3 className="mt-2 text-center text-white">Footer</h3>
-				<nav className="navbar">
-				
-					<ul className="navbar-nav">
+			<nav className="navbar">
 		
-		        <li className="nav-item">
-		          <a href="https://www.facebook.com" className="nav-link"> <i className="fa fa-facebook text-white"></i> </a>
+			<ul style={{listStyleType: "none", textAlign: 'center',margin: '0', padding:'0'}}>
+		
+		        <li style={{display:'inline-block', padding:"20px", fontSize:"20px"}}>
+		          <a href="https://www.facebook.com"> <i className="fa fa-facebook text-white"></i> </a>
 		        </li>
 		      
 		     
-		        <li className="nav-item">
-		          <a href="https://www.instagram.com" className="nav-link"> <i className="fa fa-instagram text-white"></i> </a>
+		        <li style={{display:'inline-block', padding:"20px", fontSize:"20px"}}>
+		          <a href="https://www.instagram.com"> <i className="fa fa-instagram text-white"></i> </a>
 		        </li>
 		      
 		     
-		        <li className="nav-item">
-		          <a href="https://www.twitter.com" className="nav-link"> <i className="fa fa-twitter text-white"></i> </a>
+		        <li style={{display:'inline-block', padding:"20px", fontSize:"20px"}}>
+		          <a href="https://www.twitter.com"> <i className="fa fa-twitter text-white"></i> </a>
 		        </li>
 		      
-		      </ul>
-				
+		     </ul>
+			
 				</nav>
 			</footer>
+			<h5 className="text-center text-primary">&copy; 2021, <Link className="navbar-link" to="/">S_report</Link></h5>
 		</BrowserRouter>
 		</React.Fragment>
    )
